@@ -1,0 +1,94 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; 
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  min-height:100vh;
+  font-size: 24px;
+  padding: 2em 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align:center;
+  gap: 1em;
+  width: 70vmin;
+}
+
+.input_wrapper,.task_wrapper {
+  border: 1px solid black;
+  padding: 1em;
+  border-radius: 0.25em;
+}
+
+.input_wrapper * {
+  font-size: 24px;
+  padding: 0.25em;
+  outline: none;
+  border-radius: 0.25em;
+  border: 1px solid black;
+
+}
+
+.input_wrapper button {
+  background: transparent;
+  cursor: pointer;
+}
+
+.input_wrapper button:hover {
+  background-color: rgb(241, 241, 241);
+  color: rgb(63, 31, 248);
+}
+
+.task_wrapper ul{
+  list-style:none;
+}
+
+.task, .input_wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+
+.task input {
+  width: 2em;
+  height: 2em;
+  cursor: pointer;
+}
+
+.task {
+  padding: 0.25em 0;
+}
+
+.done{
+  text-decoration: line-through;
+}
+
+.task_options {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.task_options span {
+  cursor: pointer;
+  user-select:none;
+}
+
+.task_wrapper {
+  width: 100%;
+  overflow-wrap: break-word;
+  text-align: left;
+}
+
+.input_wrapper input {
+  width: 50vmin;
+}
